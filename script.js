@@ -218,7 +218,7 @@ const gameController = (function () {
     }
 
     const choseGame = () => {
-        if (correctTotal > 20) {
+        if (correctTotal > 0) {
             let randomValue = Math.floor(Math.random() * (usableQuestions.length + usableBills.length));
             if (randomValue < usableQuestions.length) {
                 game = "one";
